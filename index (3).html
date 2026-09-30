@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demat Account | Investment Journey</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#18202b;background:#fff}
+  .top{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #eee;
+       display:flex;align-items:center;justify-content:space-between;padding:16px 22px}
+  .brand{font-size:38px;font-weight:800;letter-spacing:-1.5px}
+  .tag{display:block;color:#2990e8;font-size:11px;letter-spacing:.4px;margin-top:-4px}
+  .open{background:#2878e8;color:white;border:0;border-radius:12px;padding:14px 20px;font-size:16px;font-weight:700}
+  .hero{padding:42px 25px 30px;text-align:left}
+  .hero h1{font-size:39px;line-height:1.1;margin:0 0 8px}
+  .hero h1 span{color:#6f7c8c;font-weight:500}
+  .hero p{color:#6f7c8c;font-size:18px;line-height:1.5;margin:12px 0 25px}
+  .card{margin:0 18px 35px;padding:25px 18px;border-radius:25px;background:#fff;
+        box-shadow:0 8px 30px rgba(40,90,140,.12);border:1px solid #edf2f6}
+  .card h2{margin:0 0 8px;font-size:26px}
+  .card .sub{color:#718091;margin:0 0 20px}
+  label{display:block;font-size:14px;color:#677383;margin:13px 2px 7px}
+  input{width:100%;padding:16px;border:1px solid #dfe5eb;border-radius:12px;font-size:16px;outline:none}
+  input:focus{border-color:#2e80e9;box-shadow:0 0 0 3px rgba(46,128,233,.1)}
+  .submit{width:100%;margin-top:20px;padding:16px;border:0;border-radius:12px;background:#2878e8;color:white;
+          font-size:17px;font-weight:700;cursor:pointer}
+  .small{font-size:12px;color:#7a8795;line-height:1.5;margin-top:12px}
+  .features{background:#eafcff;padding:35px 25px}
+  .feature{display:flex;gap:18px;align-items:center;margin:22px 0}
+  .icon{width:62px;height:62px;border-radius:15px;background:#fff;display:flex;align-items:center;justify-content:center;
+        font-size:30px;box-shadow:0 4px 14px rgba(0,0,0,.05)}
+  .feature b{font-size:19px}.feature p{margin:7px 0 0;color:#718091}
+  .invest{padding:38px 22px}
+  .invest h2{text-align:center;font-size:29px;margin:0 0 8px}
+  .invest>p{text-align:center;color:#718091;line-height:1.5;margin-bottom:25px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .tile{min-height:150px;border:1px solid #edf2f6;border-radius:22px;padding:22px;
+        box-shadow:0 5px 20px rgba(50,100,150,.08)}
+  .tile .emoji{font-size:35px}.tile b{display:block;margin-top:28px;font-size:18px}
+  .success{display:none;margin-top:15px;padding:13px;border-radius:10px;background:#e8fff2;color:#14733f;font-size:14px}
+  footer{text-align:center;padding:25px;color:#7a8795;font-size:12px}
+  @media(min-width:700px){body{max-width:520px;margin:auto}.top{position:relative}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div><div class="brand">Choice</div><span class="tag">The Joy of Earning</span></div>
+  <button class="open" onclick="document.getElementById('lead').scrollIntoView({behavior:'smooth'})">Open Account</button>
+</header>
+
+<section class="hero">
+  <h1>#BharoseKiChoice<br><span>For Your Investment Journey</span></h1>
+  <p>Open your Demat & Trading Account and explore stocks, IPOs, commodities, F&amp;O and more from one platform.</p>
+</section>
+
+<section class="card" id="lead">
+  <h2>Open Your Demat Account</h2>
+  <p class="sub">Submit your details and our representative can contact you.</p>
+
+  <form id="leadForm">
+    <label for="name">Full Name</label>
+    <input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+    <label for="mobile">Mobile Number</label>
+    <input id="mobile" name="mobile" type="tel" inputmode="numeric" pattern="[0-9]{10}" maxlength="10"
+           placeholder="10-digit mobile number" required>
+
+    <label for="email">Email Address</label>
+    <input id="email" name="email" type="email" placeholder="Enter your email address" required>
+
+    <button class="submit" type="submit">Submit Details</button>
+    <div class="success" id="success">Your enquiry is ready to send.</div>
+    <div class="small">By submitting, you agree to be contacted regarding Demat account opening and related services. Investment products are subject to market risks.</div>
+  </form>
+</section>
+
+<section class="features">
+  <div class="feature"><div class="icon">🏆</div><div><b>Full-Service Support</b><p>Guidance for your investment journey</p></div></div>
+  <div class="feature"><div class="icon">📅</div><div><b>30+ Years</b><p>Domain expertise</p></div></div>
+  <div class="feature"><div class="icon">📊</div><div><b>Strong Research</b><p>Retail + Institutional</p></div></div>
+  <div class="feature"><div class="icon">📱</div><div><b>All-in-One</b><p>Investment platform</p></div></div>
+</section>
+
+<section class="invest">
+  <h2>Choose Your Investments</h2>
+  <p>Explore diverse investment options for your financial goals.</p>
+  <div class="grid">
+    <div class="tile"><div class="emoji">〽️</div><b>Stocks ›</b></div>
+    <div class="tile"><div class="emoji">🪙</div><b>Commodities ›</b></div>
+    <div class="tile"><div class="emoji">🚩</div><b>IPOs ›</b></div>
+    <div class="tile"><div class="emoji">💜</div><b>Loans ›</b></div>
+    <div class="tile"><div class="emoji">↕️</div><b>F&amp;O ›</b></div>
+    <div class="tile"><div class="emoji">🛡️</div><b>Bonds ›</b></div>
+  </div>
+</section>
+
+<footer>© 2026 • Demat Account Enquiry</footer>
+
+<script>
+const OWNER_WHATSAPP = "917861963545";
+const OWNER_EMAIL = "shivammaske70@gmail.com";
+
+document.getElementById('leadForm').addEventListener('submit', function(e){
+  e.preventDefault();
+
+  const name = document.getElementById('name').value.trim();
+  const mobile = document.getElementById('mobile').value.trim();
+  const email = document.getElementById('email').value.trim();
+
+  if(!/^[0-9]{10}$/.test(mobile)){
+    alert('Please enter a valid 10-digit mobile number.');
+    return;
+  }
+
+  const message =
+    "Demat Account Enquiry%0A%0A" +
+    "Name: " + encodeURIComponent(name) + "%0A" +
+    "Mobile: " + encodeURIComponent(mobile) + "%0A" +
+    "Email: " + encodeURIComponent(email);
+
+  const whatsappUrl = "https://wa.me/" + OWNER_WHATSAPP + "?text=" + message;
+  const emailSubject = encodeURIComponent("New Demat Account Enquiry");
+  const emailBody = encodeURIComponent(
+    "New Demat Account Enquiry\n\n" +
+    "Name: " + name + "\n" +
+    "Mobile: " + mobile + "\n" +
+    "Email: " + email
+  );
+  const mailUrl = "mailto:" + OWNER_EMAIL +
+    "?subject=" + emailSubject + "&body=" + emailBody;
+
+  // Open WhatsApp first; email is also prepared as a fallback.
+  window.open(whatsappUrl, "_blank");
+  setTimeout(() => { window.location.href = mailUrl; }, 500);
+
+  document.getElementById('success').style.display='block';
+  document.getElementById('success').innerHTML =
+    "Your enquiry is ready. WhatsApp and email options have been opened.";
+});
+</script>
+</body>
+</html>
